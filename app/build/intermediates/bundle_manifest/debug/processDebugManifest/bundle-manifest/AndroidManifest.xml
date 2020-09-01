@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.shanmetta_tm"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="29" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name="com.example.shanmetta_tm.dataUser" />
+        <activity android:name="com.example.shanmetta_tm.hotelListAdapter" />
+        <activity android:name="com.example.shanmetta_tm.dataHotel" />
+        <activity android:name="com.example.shanmetta_tm.isimybooking" />
+        <activity android:name="com.example.shanmetta_tm.checkin" />
+        <activity android:name="com.example.shanmetta_tm.chekin" />
+        <activity android:name="com.example.shanmetta_tm.detailhotel" />
+        <activity android:name="com.example.shanmetta_tm.toolbar" />
+        <activity android:name="com.example.shanmetta_tm.mybooking" />
+        <activity android:name="com.example.shanmetta_tm.isirow" />
+        <activity android:name="com.example.shanmetta_tm.Homepages" />
+        <activity android:name="com.example.shanmetta_tm.Register" />
+        <activity android:name="com.example.shanmetta_tm.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

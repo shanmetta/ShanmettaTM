@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Hotel Booking</string>
+    <string name="login_page">Login Page</string>
+    <string name="Homepages">pricehotel</string>
+
+    <string-array name="email">
+        <item>admin@gmail.com</item>
+        <item>lala@gmail.com</item>
+    </string-array>
+
+    <string-array name="password">
+        <item>Pika123</item>
+        <item>Luna345</item>
+    </string-array>
+</resources>
+
+

@@ -1,0 +1,49 @@
+public class resgister {
+
+	Scanner scan = new Scanner(System.in);
+    private static final Pattern password_pattern = Pattern.compile("^" + "(?=.*[a-z])" + "(?=.*[A-Z])" + "$" );
+
+    String fullnameTxt, emailTxt, passwordTxt, phoneTxt;
+ //   Button regisBtn;
+
+ 
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+       /*
+       fullnameTxt = findViewById(R.id.fullname_txt);
+        emailTxt = findViewById(R.id.emailregis_txt);
+        passwordTxt = findViewById(R.id.pwregis_txt);
+        phoneTxt = findViewById(R.id.phone_txt);
+        regisBtn=findViewById(R.id.regiss_btn);
+*/
+
+//       regisBtn.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+
+               String fullname = fullnameTxt.getText().toString();
+               String email = emailTxt.getText().toString();
+               String password = passwordTxt.getText().toString();
+
+               String phone = phoneTxt.getText().toString();
+
+
+               if (!fullname.contains(" ")) {
+                   fullnameTxt.setError("Name at leasr 2 words");
+               } else if (!email.contains(".@") && !email.contains("@.") && !email.contains("@") && !email.contains(".")) {
+                   emailTxt.setError("Email harus ada @ dan .");
+               } else if (password.length() < 5) {
+                   passwordTxt.setError("Password must more than or equals 5 characters");
+                   }
+
+               else if(!password_pattern.matcher(password).matches() ){
+                   passwordTxt.setError("Password harus huruf besar kecil");
+               }
+               }
+           }
+
+           }
+        });
+
+
+
